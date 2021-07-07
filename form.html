@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="form.css">
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+  </head>
+<body>
+    <div class="regform"> <h1>Information Form</h1> </div>
+    <div class="main">
+    <form id="testForm">
+      <div id= "name">
+        <h2 class="name">Name</h2>
+        <input id="firstname" type="text" required name="first_name"><br>
+<label id="firstlabel">First Name</label>
+
+<input id="lastname" type="text" required name="last_name"><br>
+<label id="lastlabel">Last Name</label>
+       </div>
+     <h2 class="name"> Profesion</h2>
+   <input id="profesion" type="text"  name="profesion" placeholder="student,teacher,etc">
+
+   <h2 class="name">Email ID</h2>
+ <input id="email" type="email" required name="email" placeholder="e.g. marcus900@mail.com">
+ <h2 class="name">DOB(date of birth)</h2>
+<input id="dateofbirth" type="date" required name="dateofbirth">
+
+<h2 class="name">Mobile Number</h2>
+<input id="mobile" type="text" required name="mobile" pattern="[789][0-9]{9}">
+
+<h2 class="name">State</h2>
+<select id="state" name="state" >
+  <option disabled="disabled" selected="selected" required>Select a State</option>
+  <option> Maharashtra</option>
+
+    <option>Tamil Nadu</option>
+      <option>Gujrat</option>
+        <option>Kerela</option>
+          <option>Assam</option>
+  </select>
+  <h2 id="travel">Have you travelled to any Covid affected Countries in the last 1 month</h2>
+  <div id="travel">
+<input type="radio" name="option" value="YES" checked="checked">YES
+<input type="radio" name="option" value="NO">NO
+  </div>
+<h2 id="symptoms">Do you have any of the following symptoms?</h2>
+<div class="arrange">
+<input type="checkbox" name="syptoms" value="fever" id="cb1"><label for="cb1">fever</label><br>
+<input type="checkbox" name="syptoms" value="breathing difficulty" id="cb2"><label for="cb2">breathing difficulty</label><br>
+<input type="checkbox" name="syptoms" value="sore throat" id="cb3"><label for="cb3">sore throat</label><br>
+<input type="checkbox" name="syptoms" value="dry cough" id="cb4"><label for="cb4">dry cough</label><br>
+<input type="checkbox" name="syptoms" value="chest pain" id="cb5"><label for="cb5">chest pain</label><br>
+</div>
+<input type="submit" id="submit">
+
+<h2 id="centers">Vaccination Centers</h2><span id="result"></span><br>
+
+
+ </form> </div>
+
+<script src="https://www.gstatic.com/firebasejs/6.3.4/firebase.js"></script>
+
+ <script src="form.js"></script>
+
+
+
+
+</body>
+
+
+
+
+
+
+
+
+</html>
